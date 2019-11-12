@@ -32,4 +32,62 @@ button:focus {
 .main-body {
   height: 3662px;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-logo {
+  display: block;
+  width: 130px;
+  height: 41.2px;
+  margin-left: 2px;
+}
+
+.logos-company {
+  position: absolute;
+  top: 84px;
+  display: inline;
+}
+
+@media (min-width: 320) and (min-width: 370) {
+  .section1-text {
+    width: 270px;
+    height: 63px;
+    font-family: HelveticaNeue;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #eeffff;
+  }
+  .rectangle-box {
+    width: 241px;
+    height: 410px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(33.5px);
+    backdrop-filter: blur(33.5px);
+    -webkit-box-shadow: 2px 2px 75px 0 #1f1f1f;
+            box-shadow: 2px 2px 75px 0 #1f1f1f;
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+  }
+  .heading-para {
+    width: 283px;
+    height: 138px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.08px;
+    text-align: center;
+    color: #b5acd3;
+  }
+}
 /*# sourceMappingURL=style-dubai-freetrail.css.map */
