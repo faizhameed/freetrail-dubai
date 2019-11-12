@@ -46,7 +46,23 @@ button:focus {
   display: inline;
 }
 
-@media (min-width: 320) and (min-width: 370) {
+.slideshow {
+  height: 500px;
+}
+
+.slideshow h2 {
+  font-family: Lato;
+  font-size: 17px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffe18c;
+}
+
+.slideshow .testimonial {
+  text-align: center;
+}
+
+@media only screen and (min-width: 320) {
   .section1-text {
     width: 270px;
     height: 63px;
@@ -84,20 +100,5 @@ button:focus {
     text-align: center;
     color: #b5acd3;
   }
-  
-.slideshow {
-  height: 500px;
-}
-
-.slideshow h2 {
-  font-family: Lato;
-  font-size: 17px;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffe18c;
-}
-
-.slideshow .testimonial {
-  text-align: center;
 }
 /*# sourceMappingURL=style-dubai-freetrail.css.map */
