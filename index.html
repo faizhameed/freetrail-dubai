@@ -15,6 +15,7 @@
       type="image/png"
       href="https://d2woyw6vp5g0b2.cloudfront.net/images/favicon_min.png"
     />
+    <link rel="stylesheet" href="/src/animate.changethewords.css">
     <link rel="stylesheet" href="/src/style-dubai-freetrail.css" />
     <title>No title</title>
   </head>
@@ -30,7 +31,138 @@
           />
         </header>
       </div>
-      <div class="secondary-body"></div>
+      <div class="secondary-body">
+          <div class="slideshow" id="slideshow">
+            <h2>TESTIMONIAL</h2>
+              <!-- Testimonial1 -->
+              <span data-id="1">
+                <div class="picture">
+                  <img src="" />
+                </div>
+                <div class="testimonial">
+                  <p>
+                    <br />No doubt Teleduce is an excellent product for startup like us,
+                    one thing that I admire the most about corefactors is their support
+                    and client relationship. <br /><br />Praveen Gowdru<br />CEO and Co
+                    founder, VMEDO
+                  </p>
+                  <img
+                    class="inverted1"
+                    src=""
+                    alt="inverted"
+                  />
+                  <img
+                    class="inverted2"
+                    src=""
+                    alt="inver"
+                  />
+                </div>
+              </span>
+              <!-- Testimonial2 -->
+              <span data-id="2">
+                <div class="picture">
+                  <img src="" />
+                </div>
+                <div class="testimonial">
+                  <p>
+                    <br />We are using the SMS gateway services from corefactors for our
+                    banking operations. The services and support from Corefactors team
+                    is very good. Turnaround time for issue resolution is
+                    commendable.<br /><br />Mr Madhu <br />
+                    Manager IT, Ujjivan Bank Limited
+                  </p>
+                  <img
+                    class="inverted1"
+                    src=""
+                    alt="inverted"
+                  />
+                  <img
+                    class="inverted2"
+                    src=""
+                    alt="inver"
+                  />
+                </div>
+              </span>
+              <!-- Testimonial3 -->
+              <span data-id="3">
+                <div class="picture">
+                  <img
+                    src=""
+                  />
+                </div>
+                <div class="testimonial">
+                  <p>
+                    <br />Corefactors is one of the best company which delivers services
+                    along with good customer service and support...I have always got a
+                    response from corefactors team instantly...Requests like customized
+                    SMS & OBD campaigns are executed very efficiently. <br /><br />Mr
+                    Harsh Khurana <br />Manager - Customer Relations, Pidilite
+                    Industries Limited
+                  </p>
+                  <img
+                    class="inverted1"
+                    src=""
+                    alt="inverted"
+                  />
+                  <img
+                    class="inverted2"
+                    src=""
+                    alt="inver"
+                  />
+                </div>
+            </span>
+              <!-- Testimonial4 -->
+              <span data-id="4">
+                <div class="picture">
+                  <img
+                    src=""
+                  />
+                </div>
+                <div class="testimonial">
+                  <p>
+                    <br />Great set of people to work with. I have always had a good
+                    experience. They listen to the customers needs and deliver to the
+                    best of their ability. They are upfront.<br /><br />Mr Dharma Teja
+                    <br />
+                    CEO, Ninestar suzuki
+                  </p>
+                  <img
+                    class="inverted1"
+                    src=""
+                    alt="inverted"
+                  />
+                  <img
+                    class="inverted2"
+                    src=""
+                    alt="inver"
+                  />
+                </div>
+              </div>
+            </span>
+      </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/script-dubai-freetrail.js"></script>
+    <script>
+       $(function() {
+        $("#slideshow").changeWords({
+          time: 2000,
+          animate: "fadeInLeft",
+          selector: "span",
+          repeat: true // false
+        });
+      });
+    </script>
   </body>
 </html>

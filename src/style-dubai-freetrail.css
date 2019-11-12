@@ -32,4 +32,20 @@ button:focus {
 .main-body {
   height: 3662px;
 }
+
+.slideshow {
+  height: 500px;
+}
+
+.slideshow h2 {
+  font-family: Lato;
+  font-size: 17px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffe18c;
+}
+
+.slideshow .testimonial {
+  text-align: center;
+}
 /*# sourceMappingURL=style-dubai-freetrail.css.map */
