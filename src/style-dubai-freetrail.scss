@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+input[type="button"] {
+  outline: none;
+}
+
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.root {
+  background-image: url(./background-images/Group419.svg);
+  height: 3662px;
+  background-size: 100%;
+}
