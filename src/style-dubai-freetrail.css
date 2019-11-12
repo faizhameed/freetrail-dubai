@@ -26,7 +26,10 @@ button:focus {
 
 .root {
   background-image: url(./background-images/Group419.svg);
-  height: 3662px;
   background-size: 100%;
+}
+
+.main-body {
+  height: 3662px;
 }
 /*# sourceMappingURL=style-dubai-freetrail.css.map */
