@@ -32,10 +32,7 @@ button:focus {
 .main-body {
   height: 3662px;
 }
-*{
-  margin: 0px;
-  padding: 0px;
-}
+
 
 .main-logo{
   display: block;
@@ -91,4 +88,19 @@ button:focus {
       color: #b5acd3;
     }
   
+
+
+.slideshow {
+  height: 500px;
+  h2 {
+    font-family: Lato;
+    font-size: 17px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffe18c;
+  }
+  .testimonial {
+    text-align: center;
+  }
+
 }

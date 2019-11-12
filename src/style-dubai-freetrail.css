@@ -33,11 +33,6 @@ button:focus {
   height: 3662px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .main-logo {
   display: block;
   width: 130px;
@@ -89,5 +84,20 @@ button:focus {
     text-align: center;
     color: #b5acd3;
   }
+  
+.slideshow {
+  height: 500px;
+}
+
+.slideshow h2 {
+  font-family: Lato;
+  font-size: 17px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffe18c;
+}
+
+.slideshow .testimonial {
+  text-align: center;
 }
 /*# sourceMappingURL=style-dubai-freetrail.css.map */
