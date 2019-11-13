@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.739" height="68" viewBox="0 0 85.739 68">
+    <defs>
+        <style>
+            .cls-1{fill:#3c277a}.cls-2{fill:#ffd246}.cls-3{fill:#0093dd}.cls-4{fill:#5a0552}
+        </style>
+    </defs>
+    <g id="noun_Funnel_2214780" transform="translate(-.928 -.073)">
+        <path id="Path_1377" d="M40.7 49H26v16.8l14.7-7.351zM30.2 60.972l-2.1 1.47V51.1h2.1z" class="cls-1" data-name="Path 1377" transform="translate(1.212 2.271)"/>
+        <path id="Path_1378" d="M6 22l21 26.254h14.7L62.709 22zm25.2 22.054h-2.31L15.241 26.2H31.2z" class="cls-1" data-name="Path 1378" transform="translate(.209 .916)"/>
+        <path id="Rectangle_695" d="M0 0h68v7H0z" class="cls-1" data-name="Rectangle 695" transform="translate(.928 14.073)"/>
+        <circle id="Ellipse_287" cx="3.5" cy="3.5" r="3.5" class="cls-2" data-name="Ellipse 287" transform="translate(2.928 .073)"/>
+        <circle id="Ellipse_296" cx="3" cy="3" r="3" class="cls-3" data-name="Ellipse 296" transform="translate(66.928 52.073)"/>
+        <circle id="Ellipse_288" cx="3.5" cy="3.5" r="3.5" class="cls-2" data-name="Ellipse 288" transform="translate(40.928 .073)"/>
+        <circle id="Ellipse_295" cx="3.5" cy="3.5" r="3.5" class="cls-2" data-name="Ellipse 295" transform="translate(72.928 58.073)"/>
+        <circle id="Ellipse_289" cx="2" cy="2" r="2" class="cls-3" data-name="Ellipse 289" transform="translate(30.928 7.073)"/>
+        <circle id="Ellipse_294" cx="2" cy="2" r="2" class="cls-1" data-name="Ellipse 294" transform="translate(62.928 61.073)"/>
+        <circle id="Ellipse_290" cx="2.5" cy="2.5" r="2.5" class="cls-1" data-name="Ellipse 290" transform="translate(24.928 .073)"/>
+        <circle id="Ellipse_291" cx="2.1" cy="2.1" r="2.1" class="cls-2" data-name="Ellipse 291" transform="translate(53.466 7.478)"/>
+        <circle id="Ellipse_297" cx="2.1" cy="2.1" r="2.1" data-name="Ellipse 297" transform="translate(82.466 58.478)"/>
+        <circle id="Ellipse_292" cx="2" cy="2" r="2" class="cls-3" data-name="Ellipse 292" transform="translate(60.928 2.073)"/>
+        <circle id="Ellipse_293" cx="2.5" cy="2.5" r="2.5" class="cls-4" data-name="Ellipse 293" transform="translate(12.928 5.073)"/>
+    </g>
+</svg>

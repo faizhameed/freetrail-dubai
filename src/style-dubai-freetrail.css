@@ -6,6 +6,7 @@
 body,
 html {
   height: 100%;
+  font-family: "Lato", sans-serif;
 }
 
 input[type="button"] {
@@ -22,6 +23,14 @@ li {
 
 button:focus {
   outline: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.dn {
+  display: none;
 }
 
 .root {
@@ -152,6 +161,7 @@ button:focus {
 .container {
   padding-left: 0px;
   padding-right: 0px;
+  max-width: 850px;
 }
 
 .container .customer-logos {
@@ -168,6 +178,11 @@ button:focus {
 .container .customer-logos .manipal img,
 .container .customer-logos .ujivan img {
   margin-top: 10px;
+}
+
+.container .customer-logos .amynk img {
+  height: 80px;
+  width: auto;
 }
 
 .container .logos-company {
@@ -196,7 +211,7 @@ button:focus {
   font-stretch: normal;
   font-style: normal;
   margin: 0 20px;
-  line-height: 1.21;
+  line-height: 1.6;
   letter-spacing: 0.06px;
   text-align: center;
   color: #ffffff;
@@ -227,32 +242,171 @@ button:focus {
   border-radius: 119px;
 }
 
-@media only screen and (min-width: 320) {
-  .section1-text {
-    width: 270px;
-    height: 63px;
-    font-family: HelveticaNeue;
-    font-size: 26px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: center;
-    color: #eeffff;
+.ternary-section {
+  background: #fdf4db;
+  padding: 20px 0;
+}
+
+.ternary-section h2 {
+  margin: 20px 20px;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #3c277a;
+}
+
+.ternary-section .card {
+  width: 90%;
+  max-width: 350px;
+  height: 242px;
+  border-radius: 13px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 27px 0 #d9d9d9;
+          box-shadow: 0 0 27px 0 #d9d9d9;
+  background-color: #faf8ff;
+}
+
+.ternary-section .card img {
+  width: 83.5px;
+  height: 66.1px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 12px 10px 10px;
+}
+
+.ternary-section .card h3 {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 1.42;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3c277a;
+}
+
+.ternary-section .card p {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--brownish-grey);
+}
+
+.section-4 {
+  height: 164px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#22007d), color-stop(36%, #2d0174), color-stop(80%, #490460), to(#5d0651));
+  background-image: linear-gradient(to bottom, #22007d, #2d0174 36%, #490460 80%, #5d0651);
+}
+
+.section-4 h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.24px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-4 a {
+  width: 128px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #f06958;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #f8f8f8;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .accordion .card .card-header {
+  width: 100%;
+  height: 45px;
+  padding: 0.25rem 1.25rem;
+}
+
+footer .accordion .card .card-header .btn {
+  margin: auto;
+  padding-bottom: 10px;
+  display: block;
+  color: #3c277a;
+  font-size: 18px;
+}
+
+footer .accordion .card .card-body p {
+  text-align: center;
+  color: #3c277a;
+}
+
+footer .accordion .card .card-body a {
+  text-align: center;
+  color: #3c277a;
+}
+
+footer .accordion .card .card-body ul li {
+  text-align: center;
+  color: #3c277a;
+}
+
+footer .accordion .card .acc-footer {
+  background-color: #f4f0f5;
+}
+
+@media only screen and (min-width: 320px) {
+  .section-4 {
+    padding-top: 50px;
   }
-  .heading-para {
-    width: 283px;
-    height: 138px;
-    font-family: HelveticaNeue;
-    font-size: 12px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: 0.08px;
-    text-align: center;
-    color: #b5acd3;
+}
+
+@media only screen and (min-width: 320px) and (min-width: 700px) {
+  .main-logo {
+    margin-left: 31px;
+    margin-top: 25px;
+  }
+  .section-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-1 .hero-content {
+    margin: 50px 0px 50px 50px;
+  }
+  .section-1 .hero-content h1 {
+    text-align: left;
+    margin: 0;
+  }
+  .section-1 .hero-content p {
+    text-align: left;
+  }
+  .container .customer-logos .wipro {
+    position: relative;
+    bottom: 10px;
+  }
+  .ternary-section .flex-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
