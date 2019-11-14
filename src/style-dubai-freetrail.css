@@ -578,10 +578,11 @@ footer .accordion .card .acc-footer {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 800px;
+    margin: 35px auto;
   }
   .section-4 .details .r1 .c1,
   .section-4 .details .r1 .c2 {
-    font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.19px;
     text-align: center;
@@ -590,6 +591,7 @@ footer .accordion .card .acc-footer {
   .section-4 .details .r1 .c1 h4,
   .section-4 .details .r1 .c2 h4 {
     line-height: 1.5;
+    font-size: 15px;
   }
   .section-4 .r2 {
     display: -webkit-box;
