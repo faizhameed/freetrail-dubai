@@ -34,12 +34,15 @@ li {
 }
 
 .root {
-  background-image: url(./background-images/mobile-view.png);
   background-size: 102%;
 }
 
 .main-body {
   height: auto;
+  background-image: url(./background-images/mobile-view.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main-logo {
@@ -165,7 +168,12 @@ li {
 }
 
 .rectangle-box form .btn {
-  margin: 8px 30px;
+  margin: 8px auto;
+  display: block;
+  background-color: #f06958;
+  width: 120px;
+  height: 40px;
+  color: #f8f8f8;
 }
 
 .container {
@@ -201,6 +209,12 @@ li {
   display: inline;
 }
 
+.secondary-body {
+  background-image: url(./background-images/mobile-tab-sec2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slideshow {
   height: 500px;
 }
@@ -208,7 +222,7 @@ li {
 .slideshow h2 {
   font-family: "Lato", sans-serif;
   font-size: 17px;
-  margin: 23px 0 0;
+  padding: 23px 0 0;
   letter-spacing: normal;
   text-align: center;
   color: #ffe18c;
@@ -243,6 +257,11 @@ li {
   color: #ffffff;
 }
 
+.slideshow .testimonial .co-name {
+  font-style: italic;
+  font-weight: 200;
+}
+
 .slideshow .testimonial img {
   width: 61.8px;
   margin: 0 auto;
@@ -269,7 +288,7 @@ li {
 }
 
 .ternary-section .card {
-  width: 90%;
+  width: 94%;
   max-width: 350px;
   height: 242px;
   border-radius: 13px;
@@ -284,7 +303,7 @@ li {
   height: 66.1px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 12px 10px 10px;
+  margin: 36px 45px 10px;
 }
 
 .ternary-section .card h3 {
@@ -396,13 +415,15 @@ footer .accordion .card .acc-footer {
 }
 
 @media only screen and (min-width: 320px) and (min-width: 700px) {
-  .root {
+  .main-body {
+    height: auto;
     background-image: url(./background-images/tab-view.png);
-    background-size: 102%;
+    background-size: cover;
   }
   .main-logo {
-    margin-left: 31px;
-    margin-top: 25px;
+    padding-left: 31px;
+    padding-top: 25px;
+    width: 235px;
   }
   .section-1 {
     display: -webkit-box;
@@ -549,7 +570,6 @@ footer .accordion .card .acc-footer {
   }
   .section-1 .rectangle-box .btn {
     font-size: 20px;
-    margin: 0px 30px;
   }
   .slideshow {
     width: 620px;
@@ -654,7 +674,7 @@ footer .accordion .card .acc-footer {
   }
   .section-1 .rectangle-box .btn {
     font-size: 20px;
-    margin: 25px 30px 0;
+    margin: 40px auto 0;
   }
   .container {
     padding-left: 0px;
@@ -686,9 +706,9 @@ footer .accordion .card .acc-footer {
 }
 
 @media only screen and (min-width: 320px) and (min-width: 700px) and (min-width: 850px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1250px) {
-  .root {
+  .main-body {
+    height: auto;
     background-image: url(./background-images/desktop-view.png);
-    background-size: cover;
   }
   .container {
     padding-left: 0px;
@@ -761,7 +781,7 @@ footer .accordion .card .acc-footer {
   }
   .section-1 .rectangle-box .btn {
     font-size: 20px;
-    margin: 25px 30px 0;
+    margin: 50px auto 0;
   }
   .container .customer-logos {
     padding-top: 40px;
