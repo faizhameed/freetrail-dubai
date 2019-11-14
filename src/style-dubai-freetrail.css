@@ -81,7 +81,7 @@ li {
 
 .section-1 img {
   width: 250px;
-  margin: 65px auto;
+  margin: 20px auto 0;
   display: block;
 }
 
@@ -307,9 +307,9 @@ li {
 }
 
 .ternary-section .card h3 {
-  margin: 10px;
+  margin: 10px 5px 10px 45px;
   font-family: "Lato", sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   text-transform: uppercase;
   line-height: 1.42;
   letter-spacing: normal;
@@ -318,8 +318,8 @@ li {
 }
 
 .ternary-section .card p {
-  margin: 10px;
-  font-size: 16px;
+  margin: 10px 5px 10px 45px;
+  font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -752,7 +752,7 @@ footer .accordion .card .acc-footer {
     margin: 0;
     margin: 52px 0 0 0;
     width: 380px;
-    height: 550px;
+    height: 558px;
   }
   .section-1 .rectangle-box .box-title-text {
     font-size: 35px;
@@ -795,7 +795,7 @@ footer .accordion .card .acc-footer {
   }
   .secondary-body .slideshow .testimonial p,
   .secondary-body .slideshow .testimonial h5 {
-    font-size: 25px;
+    font-size: 22px;
     margin: 10px 20px;
   }
   .ternary-section .flex-cards {

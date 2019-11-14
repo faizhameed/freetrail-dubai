@@ -27,11 +27,11 @@
       <div class="main-body">
         <!-- Vishnu Please work only on the main body that i showed you -->
         <header>
-          <img
-            class="main-logo"
-            src="https://www.corefactors.in/landingpagestaticfiles/companyLogo/logo-blue.png"
-            alt="corefactor-logo"
-          />
+       <a href="https://www.corefactors.in"><img
+        class="main-logo"
+        src="https://www.corefactors.in/landingpagestaticfiles/companyLogo/logo-blue.png"
+        alt="corefactor-logo"
+      /></a>   
         </header>
 
          <!--Section1-heading-->
@@ -47,17 +47,17 @@
 
           <div class="rectangle-box">
               <h3 class="box-title-text">Schedule a Demo</h3>
-            <form  class="" action="Submit" id="submit-form" name="submit-form" method="post">
-              <input class="input-text" type="text" name="firstname" placeholder="First Name" id="firstname">
+            <form  class="" id="submit-form" name="submit-form" >
+              <input class="input-text" type="text" name="firstname" placeholder="First Name" id="firstName">
               <input class="input-text" type="text" name="Last Name" placeholder="Last Name" id="lastname">
               <input class="input-text" type="text" name="email" placeholder="Email" id="email">
-              <input class="input-text" type="text" name="phoneno" placeholder="Phone No." id="phoneno">
-              <input class="input-text" type="text" name="companyname" placeholder="Company Name" id="companyname">
+              <input class="input-text" type="text" name="mobile" placeholder="Phone No." id="mobile">
+              <input class="input-text" type="text" name="companyname" placeholder="Company Name" id="company_name">
            
-            <p>By creating an account,you agree to the 
-                <a href=""><strong>Terms of Service.</strong></a>
+            <p style="color: #656565;">By creating an account,you agree to the 
+                <a href="https://www.corefactors.in/terms-and-conditions">Terms of Service.</a>
             </p>
-            <input type="submit" class="btn" value="SUBMIT" id="">
+            <input  class="btn" value="SUBMIT" id="trial_form_submit">
           </form>
             </div>
             </div>
@@ -185,16 +185,16 @@
                 </div> 
                 <div class="card">
                   <img src="./src/assets/card-svgs/noun_dashboard_1245750.svg" alt="">
-                  <h3 style="margin: 10px 10px 0;">Analytical insights into
+                  <h3 style="margin: 10px 10px 0 45px;">Analytical insights into
                     performance</h3>
-                  <p style="margin: 0px 10px 10px;">Get detailed insights into marketing campaigns and sales performance.</p>
+                  <p style="margin: 0px 10px 10px 45px;">Get detailed insights into marketing campaigns and sales performance.</p>
                 </div> 
                 <div class="card">
                   <img src="./src//assets/card-svgs/noun_Customers_220157.svg" alt="">
-                  <h3 style="margin: 10px 10px 0;">Retain customers and 
+                  <h3 style="margin: 10px 10px 0 45px;">Retain customers and 
                     cross-sell/upsell
                     </h3>
-                  <p style="margin: 0px 10px 10px;">Identify cross-sell/upsell opportunities with detailed information on your leads. </p>
+                  <p style="margin: 0px 10px 10px 45px;">Identify cross-sell/upsell opportunities with detailed information on your leads. </p>
                 </div> 
           </div>
       </div>
@@ -355,5 +355,204 @@
 
 
     </script>
+    <script type="text/javascript">
+	
+      $(document).ready(function(){
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+          }
+          function IsMobileNumber(txtMobId) {
+            var mob = /^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$/;
+            return mob.test(txtMobId)
+          }
+        $("#trial_form_submit").click(function(){
+          $(this).attr("disabled",true);
+          $("#form_success").attr("style","display:none").html('');
+          var to_list=[
+            {"email_id":"nagarjunan.d@corefactors.in","name":"Naga"}]
+          var accname = $('#firstName').val();
+          var accemail = $('#email').val();
+          var accmobile = $('#mobile').val();
+          var acccompany = $('#company_name').val();
+          if (accname == ""){
+            $("#form_error").html("Please enter your <strong>Name</strong>").attr("style","");;
+            $('#firstName').focus().attr("style","border-color:red");
+            $(this).attr("disabled",false);
+        //		$(window).scrollTop($('#form_error').offset().top);
+            $('html, body').animate({
+            scrollTop: $("#form_error").offset().top
+            }, 100);
+            return false;
+          }
+          else{
+            //$("#form_error").html("").css("display","none");
+            $('#firstName').attr("style","");
+          }
+          if (accemail == ""){
+            $("#form_error").html("Please enter your <strong>Email</strong>").attr("style","");
+            $('#email').focus().attr("style","border-color:red");
+            $(this).attr("disabled",false);
+        //		$(window).scrollTop($('#form_error').offset().top);
+            $('html, body').animate({
+            scrollTop: $("#form_error").offset().top
+            }, 100);
+            return false;
+          }
+          else{
+            if (!isEmail(accemail)){
+              $("#form_error").attr("style","").html("Please enter valid <strong>Email</strong>");
+              $('#email').focus().attr("style","border-color:red");
+              $(this).attr("disabled",false);
+              $('html, body').animate({
+            scrollTop: $("#form_error").offset().top
+            }, 100);
+              return false;
+            }
+            else{
+              $('#email').attr("style","");
+            }
+            
+          }
+          if (accmobile == ""){
+            $("#form_error").attr("style","").html("Please enter your <strong>Mobile</strong>");
+            $("#form_success").attr("style","display:none").html('');
+            $('#mobile').focus().attr("style","border-color:red");
+            $(this).attr("disabled",false);
+            $('html, body').animate({
+            scrollTop: $("#trial_form_submit").offset().top
+            }, 100);
+            return false;
+          }
+          else{
+            if (!IsMobileNumber(accmobile)){
+              $("#form_success").attr("style","display:none").html('');
+              $("#form_error").attr("style","").html("Please enter valid <strong>Mobile</strong>");
+              $('#mobile').focus().attr("style","border-color:red");
+              $(this).attr("disabled",false);
+          //		$(window).scrollTop($('#form_error').offset().top);
+              $('html, body').animate({
+              scrollTop: $("#form_error").offset().top
+              }, 100);
+              return false;
+            }
+            else{
+              $('#mobile').attr("style","");
+            }
+          }
+          if (acccompany == ""){
+            $("#form_error").html("Please enter <strong>Company Name</strong>").attr("style","");
+            $("#form_success").attr("style","display:none").html('');
+            $('#company_name').focus().attr("style","border-color:red");
+            $(this).attr("disabled",false);
+        //		$(window).scrollTop($('#form_error').offset().top);
+            $('html, body').animate({
+            scrollTop: $("#form_error").offset().top
+            }, 100);
+            return false;
+          }
+          else{
+            //$("#form_error").html("").css("display","none");
+            $('#company_name').attr("style","");
+          }
+          $("#form_error").attr("style","display:none");
+          $("#form_success").attr("style","").html('Loading...');
+          $('#sub_spinner').attr("style","");
+          $.ajax({
+                        url: "https://teleduce.corefactors.in/signup/",
+              //url: "http://localhost:8000/signup/",
+                        type: "POST",
+                        dataType: "json",
+                        data: {
+                            name: $("#firstName").val(),
+                            username: $("#email").val(),
+                            mobile: $("#mobile").val(),
+                            email: $("#email").val(),
+                cname: $('#company_name').val(),
+                requestsource : "corefactor site",
+                            request_type: "signup",
+                            customer_type: 'Permanent',
+                         //   csrfmiddlewaretoken: '{{ csrf_token }}'
+                        },
+                        success: function (json) {
+                if (json.datas == 'username') {
+                                $('#form_error').attr("style","").html(json.error);
+                  $('#trial_form_submit').attr("disabled",false);
+              //		$('#sub_spinner').attr("style","display:none");
+                                return false;
+                            }
+                            else if (json.datas == 'email') {
+                                $('#form_error').attr("style","").html(json.error);
+                  $('#trial_form_submit').attr("disabled",false);
+              //		$('#sub_spinner').attr("style","display:none");
+                                return false;
+                            }
+                            else if (json.datas == 'mobile') {
+                                $('#form_error').attr("style","").html(json.error);
+                  $('#trial_form_submit').attr("disabled",false);
+              //		$('#sub_spinner').attr("style","display:none");
+                                return false;
+                            }
+                            else if (json.datas == 'success') {
+                   // Sign Up - Start your free trial Lead
+                                $.ajax({
+                                    url: "https://teleduce.corefactors.in/lead/apiwebhook/b946312a-89c1-4fe9-a7b3-0db1b7ade389/",
+                    //url: "http://localhost:8000/lead/apiwebhook/ab0b44cd-9b09-4742-8df4-c2b160f74c76/",
+                                    type: "POST",
+                                    dataType: "json",
+                                    data: {
+                                        "first_name" : accname,
+                                        "mobile"     : accmobile,
+                                        "email"      : accemail,
+                                        "company"    : acccompany,
+                                        "lead_source": "Sign Up - Start your free trial",
+                                    },
+                                    success: function (json) {console.log(json.response +": "+ json.response_code);},
+                                    error: function(xhr, errmsg, err) {console.log(xhr.status + ": " + xhr.responseText);}
+                                });
+                  
+                                $("#form_error").attr("style","display:none");
+                  console.log(json.domain_url);
+                                $.ajax({
+                                    type: "GET",
+                                    url: "https:"+json.domain_url,
+
+                                    dataType: "json",
+                                    success: function (json1) {
+                                        // 	 window.location.href = json1.domain1
+                                        $('#submit-form').trigger('reset');
+                //      $("#form_error").attr("style","display:none");
+                 //     $("#form_success").attr("style","").html('We have sent an email to you. Please verify your email address. Once verified, your account will get activated.');
+                 alert('We have sent an email to you. Please verify your email address. Once verified, your account will get activated.')     
+                 $('#trial_form_submit').attr("disabled",false);
+                    //	$('#sub_spinner').attr("style","display:none");
+                                        return false;
+                                    },
+                    error: function (xhr, errmsg, err) {
+                      $('#form_error').attr("style","").html("Some error has been occured");
+                      $('#trial_form_submit').attr("disabled",false);
+                  //		$('#sub_spinner').attr("style","display:none");
+                      return false;
+                    }
+                                });
+                  return false;
+                            }
+                        },
+                        error: function (xhr, errmsg, err) {
+                            $('#form_error').attr("style","").html("Some error has been occured");
+                $("#form_success").attr("style","display:none").html('');
+                $('#trial_form_submit').attr("disabled",false);
+              //	$('#sub_spinner').attr("style","display:none");
+                            return false;
+                        }
+    
+                    });	
+                    return false;
+          });
+        
+      });
+        
+      
+      </script>
   </body>
 </html>
