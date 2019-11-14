@@ -318,6 +318,10 @@ li {
   background-image: linear-gradient(to bottom, #22007d, #2d0174 36%, #490460 80%, #5d0651);
 }
 
+.section-4 .details {
+  display: none;
+}
+
 .section-4 h3 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
@@ -545,6 +549,58 @@ footer .accordion .card .acc-footer {
     display: block;
     margin: 0 auto;
   }
+  .section-4 {
+    padding-top: 20px;
+    height: 300px;
+  }
+  .section-4 .details {
+    display: block;
+  }
+  .section-4 .details .purple {
+    color: #b172ff;
+  }
+  .section-4 .details h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: 0.29px;
+    text-align: center;
+  }
+  .section-4 .details .r1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section-4 .details .r1 .c1,
+  .section-4 .details .r1 .c2 {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.19px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .section-4 .details .r1 .c1 h4,
+  .section-4 .details .r1 .c2 h4 {
+    line-height: 1.5;
+  }
+  .section-4 .r2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    margin: 30px auto 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section-4 .r2 h3,
+  .section-4 .r2 a {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 320px) and (min-width: 700px) and (min-width: 850px) and (min-width: 992px) and (min-width: 1100px) {
@@ -590,6 +646,143 @@ footer .accordion .card .acc-footer {
   .section-1 .rectangle-box .btn {
     font-size: 20px;
     margin: 25px 30px 0;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 2500px;
+  }
+  .container .customer-logos {
+    background-color: white;
+    padding: 10px 0 0 0;
+  }
+  .container .customer-logos .slide {
+    margin: auto 10px;
+  }
+  .container .customer-logos .emi img,
+  .container .customer-logos .pedlite img,
+  .container .customer-logos .manipal img,
+  .container .customer-logos .ujivan img {
+    margin-top: 10px;
+  }
+  .container .customer-logos .amynk img {
+    height: 100px;
+    width: auto;
+  }
+  .container .logos-company {
+    position: absolute;
+    top: 84px;
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 320px) and (min-width: 700px) and (min-width: 850px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1250px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 2500px;
+  }
+  .container .customer-logos {
+    background-color: white;
+    padding: 10px 0 0 0;
+  }
+  .container .customer-logos .slide {
+    margin: auto 10px;
+  }
+  .container .customer-logos .emi img,
+  .container .customer-logos .pedlite img,
+  .container .customer-logos .manipal img,
+  .container .customer-logos .ujivan img {
+    margin-top: 10px;
+  }
+  .container .customer-logos .amynk img {
+    height: 140px;
+    width: auto;
+  }
+  .container .logos-company {
+    position: absolute;
+    top: 84px;
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 320px) and (min-width: 700px) and (min-width: 850px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1250px) and (min-width: 1395px) {
+  .section-1 .hero-content .section-1-title {
+    font-size: 40px;
+    width: 650px;
+  }
+  .section-1 .hero-content .hero-para {
+    width: 600px;
+    font-size: 20px;
+  }
+  .section-1 .rectangle-box {
+    margin: 0;
+    margin: 52px 0 0 0;
+    width: 380px;
+    height: 550px;
+  }
+  .section-1 .rectangle-box .box-title-text {
+    font-size: 35px;
+  }
+  .section-1 .rectangle-box .input-text {
+    width: 315px;
+    height: 43px;
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box .input-text::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box .input-text:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box .input-text::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box .input-text::placeholder {
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box p {
+    width: 315px;
+    margin: 19px 30px;
+    font-size: 16px;
+  }
+  .section-1 .rectangle-box .btn {
+    font-size: 20px;
+    margin: 25px 30px 0;
+  }
+  .container .customer-logos {
+    padding-top: 40px;
+  }
+  .container .customer-logos .emi img,
+  .container .customer-logos .pedlite img,
+  .container .customer-logos .manipal img,
+  .container .customer-logos .ujivan img {
+    margin-top: 10px;
+  }
+  .container .customer-logos .amynk img {
+    height: 80px;
+    width: auto;
+  }
+  .container .logos-company {
+    position: absolute;
+    top: 84px;
+    display: inline;
+  }
+  .secondary-body .slideshow {
+    height: 540px;
+    width: 1200px;
+  }
+  .secondary-body .slideshow h2 {
+    font-size: 25px;
+  }
+  .secondary-body .slideshow .testimonial p,
+  .secondary-body .slideshow .testimonial h5 {
+    font-size: 25px;
+    margin: 10px 20px;
+  }
+  .ternary-section .flex-cards {
+    width: 1380px;
+    margin: 0 auto;
   }
 }
 
