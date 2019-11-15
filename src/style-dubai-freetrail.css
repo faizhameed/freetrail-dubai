@@ -39,10 +39,9 @@ li {
 
 .main-body {
   height: auto;
-  background-image: url(./background-images/mobile-view.png);
-  background-position: cover;
+  background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/background-images/mobile-view.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main-logo {
@@ -210,7 +209,7 @@ li {
 }
 
 .secondary-body {
-  background-image: url(./background-images/mobile-tab-sec2.png);
+  background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/background-images/mob-sec2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -222,7 +221,7 @@ li {
 .slideshow h2 {
   font-family: "Lato", sans-serif;
   font-size: 17px;
-  padding: 23px 0 0;
+  padding: 40px 0 0;
   letter-spacing: normal;
   text-align: center;
   color: #ffe18c;
@@ -244,7 +243,7 @@ li {
 
 .slideshow .testimonial {
   text-align: center;
-  margin: 23px 0 0;
+  margin: 0px 0 0;
 }
 
 .slideshow .testimonial h5 {
@@ -409,6 +408,9 @@ footer .accordion .card .acc-footer {
 }
 
 @media only screen and (min-width: 320px) {
+  .section-1 .hero-para {
+    width: 80%;
+  }
   .section-4 {
     padding-top: 50px;
   }
@@ -417,7 +419,7 @@ footer .accordion .card .acc-footer {
 @media only screen and (min-width: 320px) and (min-width: 700px) {
   .main-body {
     height: auto;
-    background-image: url(./background-images/tab-view.png);
+    background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/background-images/tab-view.png);
     background-size: cover;
   }
   .main-logo {
@@ -433,6 +435,11 @@ footer .accordion .card .acc-footer {
   .section-1 .section-1-title {
     margin: 50px 0 0;
     text-align: left;
+    width: 300px;
+  }
+  .section-1 .hero-para {
+    margin: 0;
+    width: 300px;
   }
   .section-1 .hero-content {
     margin: 50px 0px 50px 50px;
@@ -450,6 +457,9 @@ footer .accordion .card .acc-footer {
   }
   .slideshow {
     height: 350px;
+  }
+  .secondary-body {
+    background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/background-images/mobile-tab-sec2.png);
   }
   .ternary-section {
     background-color: #ffffff;
@@ -708,7 +718,7 @@ footer .accordion .card .acc-footer {
 @media only screen and (min-width: 320px) and (min-width: 700px) and (min-width: 850px) and (min-width: 992px) and (min-width: 1100px) and (min-width: 1250px) {
   .main-body {
     height: auto;
-    background-image: url(./background-images/desktop-view.png);
+    background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/background-images/desktop-view.png);
   }
   .container {
     padding-left: 0px;
